@@ -53,15 +53,15 @@ download_release() {
 install_version() {
   local install_type="$1"
   local version="$2"
-  local install_path="${3%/bin}/bin"
+  local install_path="${3%/bin}"
 
   if [ "$install_type" != "version" ]; then
     fail "asdf-$TOOL_NAME supports release installs only"
   fi
 
   (
-    mkdir -p "$install_path/bin"
-    cp -r "$ASDF_DOWNLOAD_PATH"/ecspresso "$install_path/bin"
+    mkdir -p "$install_path"
+    cp "$ASDF_DOWNLOAD_PATH"/ecspresso "$install_path/bin"
 
     # TODO: Assert ecspresso executable exists.
     local tool_cmd
