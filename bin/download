@@ -14,7 +14,26 @@ mkdir -p "$ASDF_DOWNLOAD_PATH"
 release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.tar.gz"
 
 # Download tar.gz file to the download directory
-download_release "$ASDF_INSTALL_VERSION" "$release_file"
+get_os() {
+  os=$(uname | tr '[:upper:]' '[:lower:]')
+  echo "${os}"
+}
+
+get_arch() {
+  local arch
+  arch=$(uname -m | tr '[:upper:]' '[:lower:]')
+  case ${arch} in
+  x86_64)
+    arch='amd64'
+    ;;
+  esac
+
+  echo "${arch}"
+}
+
+os="$(get_os)"
+arch="$(get_arch)"
+download_release "$ASDF_INSTALL_VERSION" "$release_file" "$os" "$arch"
 
 #  Extract contents of tar.gz file into the download directory
 tar -xzf "$release_file" -C "$ASDF_DOWNLOAD_PATH" --strip-components=1 || fail "Could not extract $release_file"
