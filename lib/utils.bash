@@ -44,7 +44,7 @@ download_release() {
   arch="$4"
 
   # TODO: Adapt the release URL convention for ecspresso
-  url="$GH_REPO/releases/v${version}/ecspresso_${version}_${os}_${arch}.tar.gz"
+  url="$GH_REPO/releases/download/v${version}/ecspresso_${version}_${os}_${arch}.tar.gz"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
