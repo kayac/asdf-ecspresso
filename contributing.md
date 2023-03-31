@@ -6,7 +6,7 @@ Testing Locally:
 asdf plugin test <plugin-name> <plugin-url> [--asdf-tool-version <version>] [--asdf-plugin-gitref <git-ref>] [test-command*]
 
 #
-asdf plugin test ecspresso https://github.com/koluku/asdf-ecspresso.git "ecspresso version"
+asdf plugin test ecspresso https://github.com/kayac/asdf-ecspresso.git "ecspresso version"
 ```
 
 Tests are automatically run in GitHub Actions on push and PR.
