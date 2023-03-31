@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-ecspresso [![Build](https://github.com/koluku/asdf-ecspresso/actions/workflows/build.yml/badge.svg)](https://github.com/koluku/asdf-ecspresso/actions/workflows/build.yml) [![Lint](https://github.com/koluku/asdf-ecspresso/actions/workflows/lint.yml/badge.svg)](https://github.com/koluku/asdf-ecspresso/actions/workflows/lint.yml)
+# asdf-ecspresso [![Build](https://github.com/kayac/asdf-ecspresso/actions/workflows/build.yml/badge.svg)](https://github.com/kayac/asdf-ecspresso/actions/workflows/build.yml) [![Lint](https://github.com/kayac/asdf-ecspresso/actions/workflows/lint.yml/badge.svg)](https://github.com/kayac/asdf-ecspresso/actions/workflows/lint.yml)
 
 
 [ecspresso](https://github.com/kayac/ecspresso) plugin for the [asdf version manager](https://asdf-vm.com).
@@ -28,7 +28,7 @@ Plugin:
 ```shell
 asdf plugin add ecspresso
 # or
-asdf plugin add ecspresso https://github.com/koluku/asdf-ecspresso.git
+asdf plugin add ecspresso https://github.com/kayac/asdf-ecspresso.git
 ```
 
 ecspresso:
@@ -54,8 +54,8 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/koluku/asdf-ecspresso/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/kayac/asdf-ecspresso/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [koluku](https://github.com/koluku/)
+See [LICENSE](LICENSE) © [KAYAC Inc.](https://github.com/kayac/)
