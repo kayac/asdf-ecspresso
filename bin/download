@@ -23,6 +23,9 @@ get_arch() {
   local arch
   arch=$(uname -m | tr '[:upper:]' '[:lower:]')
   case ${arch} in
+  aarch64)
+    arch='arm64'
+    ;;
   x86_64)
     arch='amd64'
     ;;
