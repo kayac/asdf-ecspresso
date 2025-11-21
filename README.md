@@ -40,8 +40,8 @@ asdf list-all ecspresso
 # Install specific version
 asdf install ecspresso latest
 
-# Set a version globally (on your ~/.tool-versions file)
-asdf global ecspresso latest
+# Set user-level default version (on your ~/.tool-versions file)
+asdf set -u ecspresso latest
 
 # Now ecspresso commands are available
 ecspresso version
